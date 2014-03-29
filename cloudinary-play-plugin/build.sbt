@@ -9,7 +9,11 @@ resolvers += "sonatype snapshots" at "https://oss.sonatype.org/content/repositor
 
 resolvers += "sonatype releases" at "https://oss.sonatype.org/content/repositories/releases"
 
-resolvers += Resolver.file("Local Ivy", file(Path.userHome + "/.ivy2/local"))(Resolver.ivyStylePatterns)
+resolvers += "Andrew Boss snapshots" at "https://raw.githubusercontent.com/andrewboss/cloudinary-scala-core-repo/master/"
+
+resolvers += Resolver.url("Andrew Boss Custom Cloudinary Core", url("https://raw.github.com/andrewboss/cloudinary-scala-core-repo/master"))(Resolver.ivyStylePatterns)
+
+//resolvers += Resolver.file("Local Ivy", file(Path.userHome + "/.ivy2/local"))(Resolver.ivyStylePatterns)
 
 libraryDependencies ++= Seq("com.cloudinary" %% "cloudinary-core-scala" % "0.9.3-SNAPSHOT")
 
