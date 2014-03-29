@@ -1,12 +1,9 @@
 import sbt._
 import Keys._
-import SonatypeKeys._
-
-sonatypeSettings
 
 organization := "com.cloudinary"
 
-version := "0.9.2-SNAPSHOT"
+version := "0.9.3-SNAPSHOT"
 
 scalaVersion := "2.10.2"
 
